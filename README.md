@@ -7,7 +7,7 @@ Project Rep[ository for JHU Data Science Specialization Course - Getting and Cle
 ## Program: JHU Data Science Specialization
 ## Due Date: April 26, 2015
 ## Project Requirements / Description:
-## Objective: Create one R script called run_analysis.R that does the following: 1. Merges the training and the test sets to create one data set; 2. Extracts only the measurements on the mean and standard deviation for each measurement; 3. Uses descriptive activity names to name the activities in the data set; 4. Appropriately labels the data set with descriptive activity names; 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+## Objective: Create one R script called run_analysis.R that does the following: a) Merges the training and the test sets to create one data set; b) Extracts only the measurements on the mean and standard deviation for each measurement; c) Uses descriptive activity names to name the activities in the data set; d) Appropriately labels the data set with descriptive activity names; e) Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 ## 1. Download the UCI data set from the repository as identified in the project from the URl provided and Unzip in de4signated local directory 
 From URL: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
