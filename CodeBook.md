@@ -2,15 +2,15 @@
 ## This code book describes the variables, the data, and any transformations or work that you performed to clean up the data 
 # Author/Student Name: Subhasis Datta
 # Course Name: Getting and Cleaning Data
-# Program: JHU Data Science Specialization
-# Due Date: April 26, 2015
+Program: JHU Data Science Specialization
+Due Date: April 26, 2015
 # Project Requirements / Description:
-# Objective: Create one R script called run_analysis.R that does the following: 1. Merges the training and the test sets to create one data set. 2. Extracts only the measurements on the mean and standard deviation for each measurement. 3. Uses descriptive activity names to name the activities in the data set 4. Appropriately labels the data set with descriptive activity names.5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+Objective: Create one R script called run_analysis.R that does the following: 1. Merges the training and the test sets to create one data set. 2. Extracts only the measurements on the mean and standard deviation for each measurement. 3. Uses descriptive activity names to name the activities in the data set 4. Appropriately labels the data set with descriptive activity names.5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 # Install package "plyr" if not already loaded
 
 # Download the UCI data set from the repository as identified in the project from the URl provided and Unzip 
-# Data Set source: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+Data Set source: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 # Create Folder in local directory and create File Path for the data file to point to
 
 Variable: MyLocalDataPath created to identify the path where all the data sets that have been unzipped are stored with their appropriate folder structure under train, test and the other folders or files as needed by the R Program
@@ -61,16 +61,11 @@ Variable MergedXData contains the Final features in the Merged X Data
 # Step 3: Use descriptive activity names to name the activities in the data set
 # Step 4. Appropriately labels the data set with descriptive activity names.
 
-ActivityLabels <- read.table(MyLocalDataPath("activity_labels.txt"))
-
-# Clean Up Names
-ActivityLabels[, 2] = gsub("_", "", tolower(as.character(ActivityLabels[, 2])))
-MergedYData[,1] = ActivityLabels[MergedYData[,1], 2]
+Variable ActivityLabels reads the Activity Labels data
 
 # Name the correct column as Activity in the Merged Data set
 
-# Name the correct column as SubjectNumber in the Subject 
-Data
+# Name the correct column as SubjectNumber in the Subject Data
 
 # Step: 4  & 5 Merge everthing together and save into a single table from MergedXData, MergedYData, SubjectData
 
